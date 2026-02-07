@@ -1,149 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Provisional Registration Form</title>
+<title>Candidate Registration Form</title>
 
 <style>
 body{
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     background:#f2f2f2;
 }
-.container{
+
+.wrapper{
     width:900px;
-    margin:auto;
-    background:white;
+    margin:20px auto;
+    background:#fff;
     padding:20px;
 }
+
 .header{
     text-align:center;
 }
+
 .header h1{
     color:#f07c00;
     margin:0;
 }
+
+.header p{
+    margin:3px 0;
+}
+
 .form-title{
     border:1px solid #000;
     display:inline-block;
-    padding:5px 10px;
-    margin:10px 0;
+    padding:4px 12px;
+    margin-top:8px;
     font-weight:bold;
 }
-.section{
-    background:#e9e9e9;
+
+.section-title{
+    background:#e6e6e6;
+    font-weight:bold;
     padding:5px;
     margin-top:10px;
-    font-weight:bold;
 }
-table{
+
+.table{
     width:100%;
     border-collapse:collapse;
 }
-td{
+
+.table td{
     padding:6px;
     border-bottom:1px dotted #999;
+    font-size:14px;
 }
-.photo{
+
+.qual-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.qual-table th,
+.qual-table td{
+    border:1px solid #999;
+    padding:6px;
+    font-size:13px;
+}
+
+.photo-box{
     width:110px;
     height:130px;
     border:1px solid #000;
+    text-align:center;
 }
-.qual td, .qual th{
-    border:1px solid #999;
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.declaration{
+    font-size:13px;
+    margin-top:10px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
-<div class="header">
-<h1>SunRise University, Alwar</h1>
-<p>Bagad Rajput, Alwar - 301030 (Rajasthan)</p>
+    <div class="header">
+        <h1>SunRise University, Alwar</h1>
+        <p>Bagad Rajput, Alwar - 301030 (Rajasthan)</p>
 
-<div class="form-title">PROVISIONAL REGISTRATION FORM</div>
+        <div class="form-title">PROVISIONAL REGISTRATION FORM</div>
 
-<p><b>SESSION:</b> <span id="session"></span></p>
-<p><b>COURSE:</b> <span id="course"></span></p>
-<p><b>STREAM:</b> <span id="stream"></span></p>
-</div>
+        <p><b>SESSION :</b> <span id="session"></span></p>
+        <p><b>COURSE :</b> <span id="course"></span></p>
+        <p><b>STREAM :</b> <span id="stream"></span></p>
+    </div>
 
-<table>
-<tr>
-<td colspan="3"><div class="section">GENERAL INFORMATION</div></td>
-<td rowspan="6" style="text-align:center;">
-<img id="photo" class="photo">
-</td>
-</tr>
+    <table class="table">
+        <tr>
+            <td colspan="3"><div class="section-title">GENERAL INFORMATION</div></td>
+            <td rowspan="6" style="width:130px;text-align:center;">
+                <div class="photo-box">
+                    <img id="photo" src="" alt="Photo">
+                </div>
+            </td>
+        </tr>
 
-<tr>
-<td>Name of the Candidate:</td>
-<td id="name"></td>
-<td>Father's Name:</td>
-<td id="father"></td>
-</tr>
+        <tr>
+            <td>Name of the Candidate</td>
+            <td id="name"></td>
+            <td>Father's Name</td>
+            <td id="father"></td>
+        </tr>
 
-<tr>
-<td>Mother Name:</td>
-<td id="mother"></td>
-<td>Category:</td>
-<td id="category"></td>
-</tr>
+        <tr>
+            <td>Mother Name</td>
+            <td id="mother"></td>
+            <td>Category</td>
+            <td id="category"></td>
+        </tr>
 
-<tr>
-<td>Gender:</td>
-<td id="gender"></td>
-<td>Year:</td>
-<td id="year"></td>
-</tr>
+        <tr>
+            <td>Gender</td>
+            <td id="gender"></td>
+            <td>Year</td>
+            <td id="year"></td>
+        </tr>
 
-<tr>
-<td>Candidate Address:</td>
-<td id="address"></td>
-<td>District:</td>
-<td id="district"></td>
-</tr>
+        <tr>
+            <td>Candidate Address</td>
+            <td id="address"></td>
+            <td>District</td>
+            <td id="district"></td>
+        </tr>
 
-<tr>
-<td>State:</td>
-<td id="state"></td>
-<td>Country:</td>
-<td id="country"></td>
-</tr>
+        <tr>
+            <td>State</td>
+            <td id="state"></td>
+            <td>Country</td>
+            <td id="country"></td>
+        </tr>
+    </table>
 
-</table>
+    <div class="section-title">Qualification Information</div>
 
-<div class="section">Qualification Information</div>
+    <table class="qual-table">
+        <tr>
+            <th>Examination</th>
+            <th>Year</th>
+            <th>Board</th>
+            <th>Marks(%)</th>
+            <th>Subjects</th>
+        </tr>
+        <tr>
+            <td>SECONDARY</td>
+            <td>2013</td>
+            <td>UP BOARD</td>
+            <td>64</td>
+            <td>HINDI, ENG, MATHS, SCIENCE</td>
+        </tr>
+        <tr>
+            <td>SR. SECONDARY</td>
+            <td>2015</td>
+            <td>UP BOARD</td>
+            <td>56</td>
+            <td>GEN HINDI, ENG, MATHS, PHYSICS</td>
+        </tr>
+    </table>
 
-<table class="qual">
-<tr>
-<th>Examination</th>
-<th>Year</th>
-<th>Board</th>
-<th>Marks(%)</th>
-<th>Subjects</th>
-</tr>
-<tr>
-<td>SECONDARY</td>
-<td>2013</td>
-<td>UP BOARD</td>
-<td>64</td>
-<td>HINDI,ENG,MATHS,SCIENCE</td>
-</tr>
-<tr>
-<td>SR. SECONDARY</td>
-<td>2015</td>
-<td>UP BOARD</td>
-<td>56</td>
-<td>GEN HINDI,ENG,MATHS,PHYSICS</td>
-</tr>
-</table>
+    <div class="section-title">DECLARATION</div>
 
-<div class="section">DECLARATION</div>
-<p style="font-size:13px">
-I hereby declare that entries made by me in this provisional registration form are correct...
-</p>
+    <div class="declaration">
+        I hereby declare that entries made by me in this provisional registration form are correct and true to the best of my knowledge and belief.
+    </div>
 
 </div>
 
@@ -154,22 +190,22 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 if(students[id]){
-let s = students[id];
+    const s = students[id];
 
-document.getElementById("name").innerText = s.name;
-document.getElementById("father").innerText = s.father;
-document.getElementById("mother").innerText = s.mother;
-document.getElementById("session").innerText = s.session;
-document.getElementById("course").innerText = s.course;
-document.getElementById("stream").innerText = s.stream;
-document.getElementById("category").innerText = s.category;
-document.getElementById("gender").innerText = s.gender;
-document.getElementById("year").innerText = s.year;
-document.getElementById("address").innerText = s.address;
-document.getElementById("district").innerText = s.district;
-document.getElementById("state").innerText = s.state;
-document.getElementById("country").innerText = s.country;
-document.getElementById("photo").src = s.photo;
+    document.getElementById("name").innerText = s.name;
+    document.getElementById("father").innerText = s.father;
+    document.getElementById("mother").innerText = s.mother;
+    document.getElementById("session").innerText = s.session;
+    document.getElementById("course").innerText = s.course;
+    document.getElementById("stream").innerText = s.stream;
+    document.getElementById("category").innerText = s.category;
+    document.getElementById("gender").innerText = s.gender;
+    document.getElementById("year").innerText = s.year;
+    document.getElementById("address").innerText = s.address;
+    document.getElementById("district").innerText = s.district;
+    document.getElementById("state").innerText = s.state;
+    document.getElementById("country").innerText = s.country;
+    document.getElementById("photo").src = s.photo;
 }
 </script>
 
