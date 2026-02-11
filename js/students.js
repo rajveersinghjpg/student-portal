@@ -16,9 +16,9 @@ const students = {
         gender: "MALE",
         year: "2",
 
-        address: "VILL RUMASA, TEKURU",
-        district: "FIROZABAD",
-        state: "UTTAR PRADESH",
+        address: "VILL RUHASA",
+        district: "MEERUT",
+        state: "UTTAR PRADESH 250223",
         country: "INDIA",
 
         photo: "images/archit.jpg",
@@ -26,17 +26,17 @@ const students = {
         qualification: [
             {
                 exam: "HIGH SCHOOL",
-                year: "2013",
+                year: "2014",
                 board: "UP BOARD",
-                marks: "64",
+                marks: "78.5",
                 subjects: "HINDI, ENG, MATHS, SCIENCE"
             },
             {
                 exam: "ITI",
                 year: "2017",
                 board: "NCVT",
-                marks: "-",
-                subjects: "MACHINIST / GRINDER"
+                marks: "71",
+                subjects: "MACHINIST(GRINDER)"
             }
         ]
     },
